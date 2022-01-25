@@ -1,6 +1,5 @@
 -- set by using the USE keyword the DATABASE to codeup_test_db
-USE
-codeup_test_db;
+USE codeup_test_db;
 
 INSERT INTO albums (artist, name, release_date, sales, genre)
 VALUES ('Michael Jackson', 'Thriller', 1982, 70, 'Pop, post-disco, funk, rock'),
