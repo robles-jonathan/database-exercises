@@ -6,3 +6,6 @@ SELECT id, name FROM albums;
 
 SELECT 'All albums released before 1980.';
 SELECT name, release_date FROM albums where release_date < 1980;
+
+SELECT 'All albums by Michael Jackson' AS 'INFO';
+SELECT name FROM albums where artist = 'Michael Jackson';
