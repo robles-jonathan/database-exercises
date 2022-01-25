@@ -1,5 +1,6 @@
 -- set by using the USE keyword the DATABASE to codeup_test_db
 USE codeup_test_db;
+TRUNCATE albums;
 
 INSERT INTO albums (artist, name, release_date, sales, genre)
 VALUES ('Michael Jackson', 'Thriller', 1982, 70, 'Pop, post-disco, funk, rock'),
@@ -35,4 +36,3 @@ VALUES ('Michael Jackson', 'Thriller', 1982, 70, 'Pop, post-disco, funk, rock'),
        ('Santana', 'Supernatural', 1999, 30, 'Latin rock'),
        ('Guns N'' Roses', 'Appetite for Destruction', 1987, 30, 'Hard rock'),
        ('Elton John', 'Goodbye Yellow Brick Road', 1973, 30, 'rock, pop rock, glam rock');
-
