@@ -18,3 +18,8 @@ SELECT name FROM albums WHERE release_date BETWEEN 1990 AND 1999;
 SELECT 'Which albums had less than 20 million certified sales.' AS 'INFO';
 SELECT name FROM albums WHERE sales < 20;
 -- Display list is empty because there are no albums on this list with less than 20 million certified sales.
+
+SELECT 'All the albums with a genre of "Rock".' AS 'INFO';
+SELECT name, genre FROM albums where genre = 'Rock';
+-- Why do these query results not include albums with a genre of "Hard rock" or "Progressive rock"?
+-- Because the query only looks for genre 'Rock' not genre that contains the string 'Rock'
