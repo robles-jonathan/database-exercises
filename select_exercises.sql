@@ -4,4 +4,4 @@ USE codeup_test_db;
 -- Output a caption explaining the results of query.
 
 SELECT 'The name of all albums by Pink Floyd.' AS 'INFO';
-SELECT * FROM albums WHERE artist = 'Pink Floyd';
+SELECT name FROM albums WHERE artist = 'Pink Floyd';
