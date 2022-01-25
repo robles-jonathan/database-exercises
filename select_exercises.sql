@@ -14,3 +14,7 @@ SELECT genre FROM albums WHERE name = 'Nevermind';
 
 SELECT 'Which albums were released in the 1990s.' AS 'INFO';
 SELECT name FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+
+SELECT 'Which albums had less than 20 million certified sales.' AS 'INFO';
+SELECT name FROM albums WHERE sales < 20;
+-- Display list is empty because there are no albums on this list with less than 20 million certified sales.
