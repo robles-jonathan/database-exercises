@@ -4,3 +4,8 @@ USE employees;
 SELECT *
 FROM employees
 WHERE first_name IN('Irena', 'Vidya') OR first_name IN('Maya');
+
+-- Find all employees whose last name starts with 'E' — 7,330 rows.
+SELECT *
+FROM employees
+WHERE last_name LIKE 'E%';
