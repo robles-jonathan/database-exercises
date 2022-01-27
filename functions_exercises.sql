@@ -47,3 +47,10 @@ SELECT *
 FROM employees
 WHERE month(birth_date) = 12
     AND day(birth_date) = 25;
+
+# Find all employees hired in the 90s and born on Christmas — 362 rows.
+SELECT *
+FROM employees
+WHERE year(hire_date) BETWEEN 1990 AND 1999
+AND month(birth_date) = 12
+    AND day(birth_date) = 25;
