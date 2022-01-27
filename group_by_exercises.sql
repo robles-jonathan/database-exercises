@@ -11,4 +11,10 @@ ORDER BY last_name;
 SELECT DISTINCT last_name
 FROM employees
 WHERE last_name LIKE '%q%'
-    AND last_name NOT LIKE '%qu%'
+    AND last_name NOT LIKE '%qu%';
+
+SELECT COUNT(*), last_name
+FROM employees
+WHERE last_name LIKE '%q%'
+  AND last_name NOT LIKE '%qu%'
+GROUP BY last_name;
