@@ -11,13 +11,13 @@ WHERE gender = 'M'
       first_name ='Irena'
    OR first_name ='Vidya'
    OR first_name = 'Maya')
-ORDER BY last_name, first_name;
+ORDER BY last_name DESC, first_name DESC;
 
 -- Find all employees whose last name starts with 'E' — 7,330 rows.
 SELECT *
 FROM employees
 WHERE last_name LIKE 'E%'
-ORDER BY emp_no;
+ORDER BY emp_no DESC;
 
 -- Find all employees whose last name starts or ends with 'E' — 30,723 rows.
 SELECT *
