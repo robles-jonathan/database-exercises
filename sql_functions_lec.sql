@@ -1,3 +1,4 @@
+USE employees;
 # The CONCAT() function takes in any number of strings or column names and will concatenate them all together.
 SELECT CONCAT('Hello ', 'Codeup', '!');
 
