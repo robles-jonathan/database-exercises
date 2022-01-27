@@ -16,7 +16,8 @@ ORDER BY last_name, first_name;
 -- Find all employees whose last name starts with 'E' — 7,330 rows.
 SELECT *
 FROM employees
-WHERE last_name LIKE 'E%';
+WHERE last_name LIKE 'E%'
+ORDER BY emp_no;
 
 -- Find all employees whose last name starts or ends with 'E' — 30,723 rows.
 SELECT *
