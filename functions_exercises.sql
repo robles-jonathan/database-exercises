@@ -41,3 +41,9 @@ WHERE last_name LIKE '%q%';
 SELECT *
 FROM employees
 WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%';
+
+# Find all employees born on Christmas — 842 rows.
+SELECT *
+FROM employees
+WHERE month(birth_date) = 12
+    AND day(birth_date) = 25;
