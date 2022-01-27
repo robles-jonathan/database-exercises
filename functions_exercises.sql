@@ -49,7 +49,7 @@ WHERE month(birth_date) = 12
     AND day(birth_date) = 25;
 
 # Find all employees hired in the 90s and born on Christmas — 362 rows.
-SELECT *
+SELECT CONCAT(first_name, ' ', last_name, 'has been working here for ', datediff(now(),hire_date), ' days.')
 FROM employees
 WHERE year(hire_date) BETWEEN 1990 AND 1999
 AND month(birth_date) = 12
