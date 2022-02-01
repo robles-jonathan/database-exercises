@@ -1,3 +1,4 @@
+USE employees;
 SELECT d.dept_name AS "Department Name", CONCAT(e.first_name, ' ', e.last_name) AS "Department Manager"
 FROM dept_manager as dm
          JOIN employees as e
