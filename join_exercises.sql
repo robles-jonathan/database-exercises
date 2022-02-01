@@ -37,3 +37,7 @@ JOIN salaries AS s ON s.emp_no = e.emp_no
 WHERE s.to_date > CURDATE() AND dm.to_date > CURDATE()
 ORDER BY d.dept_name;
 
+
+
+# Bonus Find the names of all current employees, their department name, and their current manager's name .
+
